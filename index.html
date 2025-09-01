@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Present Tense & Prepositions Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple Present Tense & Prepositions Quiz</h1>
+            <p>Complete the 30-question exercise below. Good luck!</p>
+        </header>
+
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            
+            <div class="question-counter">
+                <span id="current-question">1</span> of <span id="total-questions">30</span>
+            </div>
+
+            <div class="question-section" id="question-section">
+                <h2 id="section-title">Part A: Fill in the blanks (Simple Present Tense)</h2>
+                <div class="question" id="question-container">
+                    <!-- Questions will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prev-btn" class="nav-btn" disabled>Previous</button>
+                <button id="next-btn" class="nav-btn">Next</button>
+                <button id="submit-btn" class="submit-btn" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>Quiz Results</h2>
+            <div class="score-summary">
+                <div class="score-circle">
+                    <span id="score-percentage">0%</span>
+                </div>
+                <p>You scored <span id="correct-answers">0</span> out of <span id="total-score">30</span></p>
+            </div>
+            
+            <div class="section-breakdown">
+                <h3>Section Breakdown:</h3>
+                <div class="breakdown-item">
+                    <span>Part A (Simple Present): </span>
+                    <span id="part-a-score">0/10</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Part B (Prepositions): </span>
+                    <span id="part-b-score">0/10</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Part C (Mixed): </span>
+                    <span id="part-c-score">0/10</span>
+                </div>
+            </div>
+
+            <button id="restart-btn" class="restart-btn">Take Quiz Again</button>
+            <button id="review-btn" class="review-btn">Review Answers</button>
+        </div>
+
+        <div class="review-section" id="review-section" style="display: none;">
+            <h2>Answer Review</h2>
+            <div id="review-content">
+                <!-- Review content will be loaded here -->
+            </div>
+            <button id="back-to-results" class="nav-btn">Back to Results</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
